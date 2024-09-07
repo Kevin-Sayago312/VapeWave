@@ -125,7 +125,7 @@ h6,
 /*! CODIGO DEL NAV DE LOS LINKS CUANDO ESTÁN EN UNA PÁGINA (LOS ACTIVE)*/
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
+    color: var(--naranja) !important;
 }
 
 /*! COLOR DEL LOGO DEL NAVBAR */
@@ -161,7 +161,7 @@ h6,
     }
 
     .navbar-light .navbar-brand h1 {
-        color: var(--primary);
+        color: var(--OxfordAzul);
     }
 
     .navbar-light .navbar-brand img {
@@ -185,7 +185,7 @@ h6,
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
-        color: var(--primary);
+        color: var(--OxfordAzul);
     }
 
     .navbar-light .navbar-nav .nav-item .dropdown-menu {
@@ -217,7 +217,7 @@ h6,
 }
 
 
-/*** Hero Header ***/
+/*! HERO HEADER ***/
 .hero-header {
     margin-bottom: 6rem;
     padding: 18rem 0;
@@ -245,7 +245,7 @@ h6,
 }
 
 
-/*** Section Title ***/
+/*** SECCIÓN DEL TITULO ***/
 .section-title {
     position: relative;
     display: flex;
@@ -290,22 +290,24 @@ h6,
     background: var(--primary);
 }
 
+
+/*! GUIONES DE LOS SPAN*/
 .section-title.text-secondary span:first-child,
 .section-title.text-secondary span:last-child,
 .section-title.text-secondary span:first-child::after,
 .section-title.text-secondary span:last-child::after {
-    background: var(--secondary);
+    background: var(--OxfordAzul);
 }
 
 .section-title.text-white span:first-child,
 .section-title.text-white span:last-child,
 .section-title.text-white span:first-child::after,
 .section-title.text-white span:last-child::after {
-    background: #FFFFFF;
+    background: var(--blanco);
 }
 
 
-/*** Feature ***/
+/*! FEATURE ***/
 .feature-item {
     transition: .5s;
 }
@@ -326,7 +328,7 @@ h6,
 }
 
 
-/*** Fact ***/
+/*! FACT ***/
 .fact {
     margin: 6rem 0;
     background:
@@ -345,7 +347,9 @@ h6,
 }
 
 
-/*** Service ***/
+/*! SERVICIOS ***/
+
+/*! COLOR DE LOS CARDS DE SERVICIOS*/
 .service-item {
     position: relative;
     padding: 45px 30px;
@@ -354,12 +358,14 @@ h6,
     transition: .5s;
 }
 
+/*! COLOR DE FONDO DE LOS CARDS CUANDO SE LE HACE CLIC*/
 .service-item:hover {
     margin-top: -15px;
     padding-bottom: 60px;
-    background: var(--primary);
+    background: var(--OxfordAzul);
 }
 
+/*! COLOR DE LOS ICONOS */
 .service-item .service-icon {
     margin: 0 auto 20px auto;
     width: 100px;
@@ -373,6 +379,7 @@ h6,
     transition: .5s;
 }
 
+/*! COLOR DE LOS ICONOS CUANDO SE LES HACE CLIC*/
 .service-item:hover .service-icon {
     color: var(--dark);
     background: url(../img/blob-secondary.png) center center no-repeat;
