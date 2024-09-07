@@ -4,6 +4,11 @@
     --secondary: #FBA504;
     --light: #F6F4F9;
     --dark: #04000B;
+    --negro: #000000;
+    --blanco:#FFFFFF;
+    --naranja: #FCA311;
+    --OxfordAzul: #14213D;
+    --Platino: #E5E5E5;
 }
 
 
@@ -87,7 +92,7 @@ h6,
 }
 
 
-/*** Navbar ***/
+/*! Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
@@ -98,6 +103,7 @@ h6,
     margin-left: 8px;
 }
 
+/*! CODIGO DEL NAV LOS LINKS DE NAVEGACION*/
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
@@ -110,18 +116,21 @@ h6,
     transition: .5s;
 }
 
+/*! CODIGO DEL NAV CUANDO SE HACE SKROLL HACIA ABAJO*/
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark) !important;
 }
 
+/*! CODIGO DEL NAV DE LOS LINKS CUANDO ESTÁN EN UNA PÁGINA (LOS ACTIVE)*/
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--secondary) !important;
 }
 
+/*! COLOR DEL LOGO DEL NAVBAR */
 .navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
+    color: var(--blanco);
 }
 
 .navbar-light .navbar-brand img {
