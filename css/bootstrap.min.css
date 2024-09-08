@@ -26,6 +26,11 @@
   --bs-danger: #dc3545;
   --bs-light: #f6f4f9;
   --bs-dark: #04000b;
+  --negro: #000000;
+  --blanco:#FFFFFF;
+  --naranja: #FCA311;
+  --OxfordAzul: #14213D;
+  --Platino: #E5E5E5;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -536,7 +541,7 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--OxfordAzul, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
@@ -2583,8 +2588,8 @@ fieldset:disabled .btn {
 .btn-primary:disabled,
 .btn-primary.disabled {
   color: #fff;
-  background-color: #6222cc;
-  border-color: #6222cc;
+  background-color: #14213D;
+  border-color: #14213D;
 }
 .btn-secondary {
   color: #000;
@@ -6787,7 +6792,7 @@ fieldset:disabled .btn {
   word-break: break-word !important;
 }
 .text-primary {
-  color: #6222cc !important;
+  color: #14213D !important;
 }
 .text-secondary {
   color: #fba504 !important;
@@ -6829,7 +6834,7 @@ fieldset:disabled .btn {
   color: inherit !important;
 }
 .bg-primary {
-  background-color: #6222cc !important;
+  background-color: #14213D !important;
 }
 .bg-secondary {
   background-color: #fba504 !important;
