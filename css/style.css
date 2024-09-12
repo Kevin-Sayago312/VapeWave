@@ -676,3 +676,8 @@ h6,
         margin-bottom: 20px;
     }
 }
+
+.sombra{
+    box-shadow: 1px 7px 45px 11px rgba(0, 0, 0, .36);
+    border-radius: 1rem;
+}
