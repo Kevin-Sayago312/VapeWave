@@ -52,12 +52,21 @@ document.getElementById('commentForm').addEventListener('submit', function(event
     const comments = JSON.parse(localStorage.getItem('comments')) || [];
 
     //! Verificar si ya hay 10 comentarios
-    if (comments.length >= 10) {
-        alert('Límite de comentarios alcanzado');
+    if (comments.length >= 15) {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "¡Se ha alcanzado el límite de referencias!"
+        });
         return; //! Detener la ejecución si se alcanza el límite
     }
 
     //! Guardar el nuevo comentario en LocalStorage
+    Swal.fire({
+        title: "¡Gracias por tu comentario!",
+        text: "Nos alegra que comentes 😊",
+        icon: "success"
+    });
     const newComment = { name, message, rating };
     comments.push(newComment);
     localStorage.setItem('comments', JSON.stringify(comments));
@@ -68,3 +77,6 @@ document.getElementById('commentForm').addEventListener('submit', function(event
     //! Limpiar el formulario después de enviar el comentario
     document.getElementById('commentForm').reset();
 });
+
+//? LINEA DE CODIGO PARA ELIMINAR TODOS LOS COMENTARIOS
+//! localStorage.clear();
